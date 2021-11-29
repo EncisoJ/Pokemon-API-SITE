@@ -1,0 +1,52 @@
+// .MoveBorder{
+// }
+html,body{
+  width: 100%;
+  height: 100%;
+  font-family: 'Courier', monospace;
+  font-smooth: never;
+  -webkit-font-smoothing : none;
+}
+.stats {
+  
+  padding: 1;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  justify-content: space-evenly;
+  width: 80.5vw;
+  gap: 5px;
+  align-items: center;
+  div{
+    border-radius: 5px;
+  width: 40vw;
+  height: 20vh;
+  }
+  
+
+  
+  
+}
+
+.ID,
+.Name,
+.Accuracy,
+.PP,
+.Power,
+.IDK,
+.Priority {
+  margin: auto;
+  font-size: 3rem;
+  background: rgb(153, 153, 153);
+  border:black 3px solid;
+  color: rgb(0, 0, 0);
+  line-height: 1;
+  border-radius: 5px;
+  width: 40vw;
+  height: 20vh;
+  align-items: center;
+}

@@ -1,0 +1,21 @@
+@use '../themes/defaultTheme' as *;
+@use '../util/mixins' as *;
+@use '../util/variables' as *;
+
+
+
+.spinner{
+    $spinner-grad: linearGradient($gray-4, primary-4);
+    @include box(100px);
+    @include center-auto;
+    border: 3px solid $grey-8;
+    border-radius: 50%;
+    border-top-color: $primary-4;
+    animation: spinner 1s ease infinite;
+
+    @keyframes spinner {
+        to{
+            transform: rotate(360deg);
+        }
+    }
+}
