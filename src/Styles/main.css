@@ -336,6 +336,8 @@ html {
 }
 
 .IndMove {
+  text-transform: capitalize;
+  margin: auto;
   line-height: 2;
   background-color: #2fb3ff;
   border: solid black;
@@ -343,6 +345,25 @@ html {
   font-size: 2rem;
   width: 20vw;
   height: 20vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  box-shadow: 1px 1px 1px black;
+}
+.IndMove:hover {
+  box-shadow: none;
+}
+.IndMove:active {
+  box-shadow: inset 1px 1px 1px black;
+}
+.IndMove h2 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2rem;
+  margin: 0;
+  text-transform: capitalize;
+  text-shadow: 1px 1px white;
 }
 
 html, body {

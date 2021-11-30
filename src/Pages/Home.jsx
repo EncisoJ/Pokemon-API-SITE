@@ -3,7 +3,7 @@ import useFetch from "../util/useFetch";
 import { Link } from "react-router-dom";
 
 const Home = () => {
-  const { moves, loading } = useFetch('?limit=844');
+  const { moves, loading } = useFetch("?limit=844");
   console.log(moves);
 
   if (loading) {
@@ -15,10 +15,11 @@ const Home = () => {
       {moves.map((move) => {
         const { name, url } = move;
         return (
-          <div className="IndMove">
-            {" "}
-            <Link to = {name}> {name} </Link>
-          </div>
+          <Link to={name}>
+            <div className="IndMove">
+               <h2>{name}</h2>
+            </div>
+          </Link>
         );
       })}
     </div>
