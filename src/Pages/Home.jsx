@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <div className="app">
       {moves.map((move) => {
-        const { name, url } = move;
+        const { name } = move;
         return (
           <Link to={name}>
             <div className="IndMove">

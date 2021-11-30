@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 const API_ENDPOINT = `https://pokeapi.co/api/v2/move`;
 
 const useFetch = (query) => {
@@ -21,7 +21,7 @@ const useFetch = (query) => {
   useEffect(() => {
     fetchMoves(`${API_ENDPOINT}${query}`);
     //https://pokeapi.co/api/v2/move  then  /movename
-  }, []);
+  }, [query]);
 
   return { moves, loading,  };
 };

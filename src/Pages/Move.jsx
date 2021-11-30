@@ -5,7 +5,7 @@ import useFetch from "../util/useFetch";
 const Move = () => {
   console.log(window.location.pathname);
   const { moves, loading } = useFetch(window.location.pathname);
-  const { name, accuracy, pp, power, id, priority, type} = moves;
+  const { name, accuracy, pp, power, id, priority} = moves;
   console.log(moves);
   if (loading) {
     <div className="loading"></div>;
